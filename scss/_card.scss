@@ -1,0 +1,37 @@
+@import "./button";
+$primary: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.123);
+  padding: 1rem;
+  h4 {
+    font-size: 1.25rem;
+    line-height: 3.5rem;
+    span {
+      display: block;
+      font-size: 3.815rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  li {
+    padding: 1rem 0;
+    border-top: 1px solid $Light-Grayish-Blue;
+    &:last-child {
+      border-bottom: 1px solid $Light-Grayish-Blue;
+    }
+  }
+}
+
+.card.pro {
+  background: $primary;
+  color: white;
+}

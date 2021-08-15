@@ -1,0 +1,38 @@
+$primary: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+input[type="button"] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background: $primary;
+  color: white;
+  border: 1px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    border-color: hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background: transparent;
+  }
+}
+
+.pro input[type="button"] {
+  border-color: white;
+  color: hsl(237, 63%, 64%);
+  background: white;
+  &:hover {
+    cursor: pointer;
+    border-color: white;
+    color: white;
+    background: transparent;
+  }
+}

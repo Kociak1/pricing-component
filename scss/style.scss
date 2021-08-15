@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@import "./card";
+@import "./toggle";
+
+$primary: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+body {
+  padding: 4rem 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: $Very-Light-Grayish-Blue;
+  background-image: url("./images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: right -12rem top -3rem;
+  color: $Dark-Grayish-Blue;
+  height: 100vh;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  h3 {
+    font-size: 1.563rem;
+    line-height: 4rem;
+    span {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    label {
+      font-size: initial;
+      color: $Light-Grayish-Blue;
+    }
+  }
+}
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right top -3rem, bottom -2.8rem left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  article {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    height: max-content;
+    min-width: 22.5rem;
+  }
+  .pro {
+    padding-top: 3rem;
+  }
+}

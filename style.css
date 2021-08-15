@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: white;
+  border: 1px solid transparent;
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+  border-color: #696fdd;
+  color: #696fdd;
+  background: transparent;
+}
+
+.pro input[type="button"] {
+  border-color: white;
+  color: #696fdd;
+  background: white;
+}
+
+.pro input[type="button"]:hover {
+  cursor: pointer;
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.123);
+          box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.123);
+  padding: 1rem;
+}
+
+.card h4 {
+  font-size: 1.25rem;
+  line-height: 3.5rem;
+}
+
+.card h4 span {
+  display: block;
+  font-size: 3.815rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.card li {
+  padding: 1rem 0;
+  border-top: 1px solid #b3b5c6;
+}
+
+.card li:last-child {
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.card.pro {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: white;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle {
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  border-radius: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0.3rem;
+}
+
+.toggle .circle {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: #f6f6fe;
+}
+
+.toggle input[type="checkbox"]:checked + .circle {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.toggle:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#cfd1f7), to(#9397e6));
+  background: linear-gradient(to right, #cfd1f7, #9397e6);
+}
+
+body {
+  padding: 4rem 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: #f6f6fe;
+  background-image: url("./images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: right -12rem top -3rem;
+  color: #494c5f;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+header h3 {
+  font-size: 1.563rem;
+  line-height: 4rem;
+}
+
+header h3 span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+header h3 label {
+  font-size: initial;
+  color: #b3b5c6;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right top -3rem, bottom -2.8rem left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    min-width: 22.5rem;
+  }
+  .pro {
+    padding-top: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

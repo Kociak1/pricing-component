@@ -1,0 +1,41 @@
+$primary: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle {
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  background: $primary;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.3rem;
+
+  .circle {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: $Very-Light-Grayish-Blue;
+  }
+
+  input[type="checkbox"]:checked + .circle {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      hsl(236, 72%, 89%),
+      hsl(237, 63%, 74%)
+    );
+  }
+}
